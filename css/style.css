@@ -38,7 +38,7 @@
 }
 .page__body {
   font-family: "Roboto", "Arial", sans-serif;
-  min-width: 960px;
+  min-width: 1158px;
   margin: 0;
   padding: 0;
 }
@@ -54,6 +54,19 @@ img {
 
 .title {
   font-family: "Roboto Bold", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-main {
@@ -74,7 +87,70 @@ img {
   line-height: 55px;
 }
 
+.page-header {
+  background-color: var(--filter);
+}
+
+.nav-cont {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 737px;
+}
+
+.main-nav a {
+  padding: 5px 10px;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.user-cart {
+  width: 100px;
+  padding:0;
+}
+
+.slider {
+  width: 1158px;
+  margin: 0 auto;
+}
+
+.grid-cont {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.products {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .products__list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -157,11 +233,21 @@ img {
   list-style: none;
 }
 
+.page-footer__social {
+  width: 1158px;
+  margin: 0 auto;
+}
+
 .page-footer__slogan {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: var(--black);
+}
+
+.page-footer__contacts {
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .page-footer__contact {
@@ -201,6 +287,12 @@ img {
   color: var(--social-text);
 }
 
+.social__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .filter__title {
   font-size: 18px;
   line-height: 30px;
@@ -235,6 +327,7 @@ img {
 }
 .sort__list {
   list-style: none;
+  justify-content: space-between;
 }
 
 .sort__item {
@@ -259,11 +352,6 @@ img {
   line-height: 18px;
 }
 
-.grid-cont {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .social {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -274,5 +362,7 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
-
-
+.partners {
+  width: 1158px;
+  margin: 0 auto;
+}
